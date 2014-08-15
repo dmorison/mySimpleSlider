@@ -1,0 +1,287 @@
+/* 
+Project Name: my Simple Slider
+Author: Dave Morison
+Developer: Dave Morison
+*/
+
+
+/*==========================================
+/* SETUP                   
+/*========================================*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+img {
+     max-width: 100%;
+}
+
+/*===========================================
+/* BASE STYLES                   
+/*=========================================*/
+
+html {
+     position: relative;
+     width: 100%;
+     height: 100%;
+}
+
+body {
+     background-color: #ffffff;
+     color: #2f2e36;
+     font-family: Verdana, Helvetica, Arial, sans-serif;
+     font-size: 13px;
+     line-height: 1.8;
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     text-align: center;
+     position: relative;
+}
+
+.inner {
+     max-width: 1248px;
+     padding: 0;
+     margin: 0 auto;
+}
+
+/*===========================================
+/* HEADER                   
+/*=========================================*/
+
+
+
+/*===========================================
+/* CONTENT STYLES                   
+/*=========================================*/
+
+/************** SLIDER ***************/
+
+.sliderOuter {
+     width: 100%;
+     overflow: hidden;
+}
+
+.sliderInner {
+     position: relative;
+     left: 0;
+}
+
+article {
+     float: left;
+}
+
+.sliderControl {
+     width: 31px;
+     position: absolute;
+     top: 0;
+     z-index: 999;
+}
+.controlLeft {
+     left: 13px;
+}
+
+.sliderControl a {
+     display: none;
+     width: 31px;
+     height: 31px;
+     border-radius: 50%;
+     margin-top: 270px;
+}
+
+#previous {
+     background: url(../images/arrowLeft-2.png) no-repeat center;
+}
+#next {
+     background: url(../images/arrowRight-2.png) no-repeat center;
+}
+
+/*************************************/
+
+section {
+     width: 100%;
+     padding: 50px 0px;
+     position: relative;
+}
+
+section.first {
+     background: #45D649;
+     padding: 25px 0px;
+}
+
+section.second {
+     padding: 10px 0 25px 0;
+}
+
+section.default-first h3 {
+     color: #fff;
+     font-family: 'Indie Flower', cursive;
+     font-size: 2.2em;
+     margin: 5px;
+     text-shadow: 0 0 20px #fff;
+}
+
+.block {
+     background-color: #fff;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100%;
+     padding-bottom: 22px;
+     margin: 10px;
+     min-height: 350px;
+}
+
+.block:hover {
+     -moz-box-shadow: 0px 0px 20px 0px #000;
+     -webkit-box-shadow: 0px 0px 20px 0px #000;
+     box-shadow: 0px 0px 20px 0px #000;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')"; /* For IE 8 */
+     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); /* For IE 5.5 - 7 */
+     -o-transition: all .5s;
+     -moz-transition: all .5s;
+     -webkit-transition: all .5s;
+     -ms-transition: all .5s;
+}
+
+.block p {
+     margin-left: 3px;
+     margin-right: 3px;
+}
+
+/*===========================================
+/* FOOTER                   
+/*=========================================*/
+
+footer {
+     width: 100%;
+     color: #bbb;
+}
+footer a {
+     color: #bbb;
+     text-decoration: none;
+}
+footer a:hover {
+     color: #F6FF00;
+     text-shadow: 0 0 20px #fff;
+}
+
+.footer {
+     padding: 20px;
+     background-color: #124773;
+}
+
+/************************************************************************/
+/************************* RESPONSIVE STYLING ***************************/
+/************************************************************************/
+
+/********** 340px minimum width ***********/
+
+@media only screen and (min-width: 340px) {
+
+     
+
+}
+
+/********** 460px minimum width ***********/
+
+@media only screen and (min-width: 460px) {
+
+     body {
+          font-size: 14px;
+     }
+
+     .inner {
+          padding: 0 12px;
+     }
+
+     .controlLeft {
+          left: 26px;
+     }
+
+}
+
+/********** 500px minimum width ***********/
+
+@media only screen and (min-width: 500px) {
+
+     
+
+}
+
+/********** 568px minimum width ***********/
+
+@media only screen and (min-width: 568px) {
+
+     
+
+}
+
+/********** 684px minimum width ***********/
+
+@media only screen and (min-width: 684px) {
+
+     
+
+}
+
+/********** 782px minimum width ***********/
+
+@media only screen and (min-width: 782px) {
+
+     
+
+}
+
+/********** 824px minimum width ************/
+
+@media only screen and (min-width: 824px) {
+
+     
+
+}
+
+/********** 882px minimum width ************/
+
+@media only screen and (min-width: 882px) {
+
+     body {
+          font-size: 15px;
+     }
+
+     
+
+}
+
+/********** 940px minimum width ************/
+
+@media only screen and (min-width: 940px) {
+
+     body {
+          font-size: 16px;
+     }
+
+}
+
+/********** 1272px minimum width ************/
+
+@media only screen and (min-width: 1272px) {
+
+     .controlLeft {
+          left: 78px;
+     }
+
+}
