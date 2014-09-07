@@ -91,4 +91,10 @@ $(document).ready(function(){
 		$('.sliderControl a').css('display', 'none');
 	});
 
+	$('.controlRight').mouseenter(function(){
+		console.log('scroll the slider');
+		console.log($('.sliderInner').offset().left);
+		$('.sliderInner').animate({Left : -1154}, 'slow');
+	});
+
 });
