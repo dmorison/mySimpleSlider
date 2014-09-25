@@ -91,6 +91,7 @@ $(document).ready(function(){
 		$('.sliderControl a').css('display', 'none');
 	});
 
+	//This function is not working
 	$('.controlRight').mouseenter(function(){
 		console.log('scroll the slider');
 		console.log($('.sliderInner').offset().left);
